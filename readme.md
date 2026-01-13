@@ -7,9 +7,7 @@
 ## 🌐 Live Demo
 
 👉 **View Live Demo:**
-[https://your-username.github.io/kinetic-clicks/](https://your-username.github.io/kinetic-clicks/)
-
-> *Replace `your-username` with your GitHub username after deploying via GitHub Pages.*
+[https://fahimsahriar.github.io/kinetic-klicks/](https://fahimsahriar.github.io/kinetic-klicks/)
 
 ---
 
