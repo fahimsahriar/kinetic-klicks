@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    background-color:#262626;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.long-width{
+    min-width: 380px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 40px;
+    color: white;
+    border: 2px solid white;
+    letter-spacing: 2px;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 500ms ease;
+}
+
+.first-button::before{
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:darkslategray;
+    transition: all 500ms ease;
+    transform: rotateX(0deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-button:hover::before{
+    transform: rotateX(90deg);
+}
+.second-button:hover{
+    background-color: #F44336;
+}
+.second-button::before{
+    content: '';
+    background-color: white;
+    width: 100%;
+    height: 15px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 1s ease;
+}
+.second-button:hover::before{
+   transform: translateX(100%) translateY(30px) rotate(45deg);
+}
+
+/* third button */
+.third-button{
+    color: #262626;
+}
+.third-button::before{
+    content: 'Click Me';
+    background-color:mediumslateblue;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .5s;
+    transform: translateX(-100%) translateY(100%);
+}
+
+.third-button::after{
+    content: 'Hover Me';
+    background-color:mediumslateblue;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .5s;
+}
+
+.third-button:hover::before{
+    transform: translateX(0) translateY(0);
+}
+.third-button:hover::after{
+    transform: translateX(100%) translateY(-100%);
+}
+
+/* fourth-button */
+.fourth-button{
+    overflow: visible;
+}
+.fourth-button::before{
+    content: 'Hover me';
+    background-color:darkblue;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    transform-origin: top;
+    
+}
+.fourth-button::after{
+    content: 'Click Me';
+    background-color:brown;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    transition-delay: 0.5s;
+    transform-origin: top;
+    
+}
+.fourth-button:hover::before, .fourth-button:hover::after{
+    transform: rotateX(270deg);
+}
+
+/* fifth button */
+.fifth-button{
+    overflow: visible;
+    border: none;
+    z-index: 99;
+}
+.fifth-button::before, .fifth-button::after{
+    content: '';
+    background-color:#ff4;
+    position: absolute;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+    z-index: 98;
+}
+.fifth-button::before{
+    left: 0;
+    box-shadow: -70px 0 0 #ff4;
+}
+.fifth-button::after{
+    right: 0;
+    box-shadow: 70px 0 0 #ff4;
+}
+.fifth-button:hover::before{
+    left: 50%;
+    box-shadow: -30px 0 0 #ff4;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+}
+.fifth-button:hover::after{
+    right: 50%;
+    box-shadow: 30px 0 0 #ff4;
+    transform: translateX(50%) translateY(-50%);
+    opacity: 0;
+}
+.fifth-button:hover{
+    transition-delay: 0.3s;
+    background-color: #ff4;
+    color: #262626;
+}
+
