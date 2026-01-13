@@ -40,7 +40,7 @@ Kinetic-Clicks/
 │
 ├── index.html
 ├── style.css
-└── assets/ (if any)
+└── img/
 ```
 
 ---
@@ -50,7 +50,7 @@ Kinetic-Clicks/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/kinetic-clicks.git
+   git clone https://github.com/fahimsahriar/kinetic-clicks.git
    ```
 2. Open `index.html` in your browser
 3. Copy any button markup and styles into your own project
@@ -77,12 +77,6 @@ If you have a cool button animation idea:
 2. Create a new branch
 3. Add your animation
 4. Submit a pull request
-
----
-
-## 📜 License
-
-This project is open-source and available under the **MIT License**.
 
 ---
 
